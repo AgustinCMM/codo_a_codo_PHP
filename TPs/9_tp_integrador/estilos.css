@@ -1,0 +1,486 @@
+/* General ------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* Header -------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+header {
+	background-color: #343a40;
+	height: 82px;
+}
+header .logo {
+	width: 20%;
+	margin: 0 5%;
+}
+header .logo img {
+	width: 7rem;
+}
+header .logo h2 {
+	padding-top: 0.3vw;
+	font-size: 1.3rem;
+	font-weight: normal;
+}
+header .menu {
+	padding-left: 7%;
+	padding-right: 3%;
+	font-size: 1.1rem;
+	text-align: center;
+}
+header a.comprar_tickets {
+	color: #29a744!important;
+}
+header a.comprar_tickets:hover {
+	color: #29c744!important;
+}
+@media screen and (max-width: 1200px) {
+	header .menu {
+		padding-left: 0%;
+		padding-right: 0%;
+		font-size: 1rem;
+	}
+}
+@media screen and (max-width: 992px) {
+	header .menu {
+		font-size: 1.5rem;
+	}
+}
+/* Main ---------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* Section conferencia */
+.conferencia {
+	background-image: url(img/ba1.jpg);
+	background-repeat: no-repeat;
+	background-position: center -10vw;
+	background-size: cover;
+	width: 100%;
+	height: 42vw;
+	position: relative;
+	z-index: 1;
+}
+.conferencia .opacidad {
+	background-color: #0007;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 0;
+}
+.conferencia .info_principal {
+	color: #fff;
+	width: 40vw;
+	position: absolute;
+	right: 8vw;
+	bottom: 9.5vw;
+	text-align: right;
+	z-index: 1;
+}
+.conferencia .info_principal h1 {
+	font-size: 2.2rem;
+}
+.conferencia .info_principal p {
+	font-size: 1.1rem;
+}
+.conferencia .info_principal a {
+	margin: 0.5rem 0.4rem;
+	font-size: 1rem;
+}
+.info_principal a.comprar_tickets {
+	background-color: #29a744!important;
+	border-color: #29a744!important;
+}
+.info_principal a.comprar_tickets:hover {
+	background-color: #29c744!important;
+	border-color: #29a744!important;
+}
+@media screen and (max-width: 992px) {
+	.conferencia {
+		background-position: center center;
+		width: 100%;
+		height: 84vw;
+	}
+	.conferencia .info_principal {
+		width: 80vw;
+		right: 10vw;
+		bottom: 30vw;
+	}
+}
+@media screen and (max-width: 576px) {
+	.conferencia {
+		background-position: center center;
+		width: 100%;
+		height: 80vh;
+	}
+	.conferencia .info_principal {
+		width: 80vw;
+		right: 10vw;
+		bottom: 10vw;
+	}
+}
+/* Section de las cards de los oradores */
+.oradores {
+	width: 65vw;
+	z-index: 2;
+}
+.titulo h3 {
+	padding-top: 1.5vw;
+	font-size: 0.7rem;
+	font-weight: normal;
+	text-align: center;
+	text-transform: uppercase;
+}
+.titulo h2 {
+	font-size: 1.7rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+.oradores .botones button {
+	padding: 0rem 0.3rem;
+	font-size: 0.65rem;
+	font-weight: bolder;
+}
+.oradores h5 {
+	font-size: 1.1rem;
+}
+.oradores p {
+	color: #666;
+	font-size: 0.65rem;
+	line-height: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+	.titulo h3 {
+		padding-top: 3vw;
+		font-size: 1rem;
+	}
+	.titulo h2 {
+		font-size: 2.5rem;
+	}
+	.oradores .botones button {
+		padding: 0rem 0.6rem;
+		font-size: 1.3rem;
+	}
+	.oradores h5 {
+		font-size: 2.2rem;
+	}
+	.oradores p {
+		font-size: 1.3rem;
+		line-height: 2.4rem;
+	}
+}
+@media screen and (max-width: 576px) {	
+	.titulo h3 {
+		padding-top: 3vw;
+		font-size: 0.8rem;
+	}
+	.titulo h2 {
+		font-size: 2.2rem;
+	}
+	.oradores .botones button {
+		padding: 0rem 0.3rem;
+		font-size: 0.8rem;
+	}
+	.oradores h5 {
+		font-size: 1.5rem;
+	}
+	.oradores p {
+		font-size: 0.8rem;
+		line-height: 1.5rem;
+	}
+}
+/* Section de Bs As - Octubre */
+.lugar {
+	height: 30vw;
+	z-index: 3;
+}
+.lugar div {
+	width: 50%;
+	height: 100%;
+}
+.lugar div.izquierda {
+	background-image: url(img/honolulu.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.lugar div.derecha {
+	color: #fff;
+	background-color: #353a40;
+	padding: 1.5vw 1vw;
+}
+.lugar div.derecha h2 {
+	font-size: 1.6rem;
+}
+.lugar div.derecha p {
+	font-size: 0.8rem;
+	line-height: 1.5rem;
+}
+.lugar div.derecha button {
+	padding: 0.2rem 0.5rem;
+	font-size: 0.9rem;
+}
+@media screen and (max-width: 992px) {
+	.lugar {
+		height: 90vh;
+		flex-direction: column;
+	}
+	.lugar div {
+		width: 100%;
+		height: 50%;
+	}
+	.lugar div.derecha {
+		padding: 5vw 3vw;
+	}
+	.lugar div.derecha h2 {
+		font-size: 1.8rem;
+	}
+	.lugar div.derecha p {
+		font-size: 1rem;
+		line-height: 1.7rem;
+	}
+	.lugar div.derecha button {
+		padding: 0.4rem 0.7rem;
+		font-size: 1.1rem;
+	}
+}
+@media screen and (max-width: 576px) {
+	.lugar {
+		height: 90vh;
+	}
+	.lugar div.izquierda {
+		width: 100%;
+		height: 40%;
+	}
+	.lugar div.derecha {
+		width: 100%;
+		height: 60%;
+	}
+	.lugar div.derecha h2 {
+		font-size: 1.5rem;
+	}
+	.lugar div.derecha p {
+		font-size: 0.8rem;
+		line-height: 1.4rem;
+	}
+	.lugar div.derecha button {
+		padding: 0.4rem 0.7rem;
+		font-size: 0.9rem;
+	}
+}
+/* Section del Conviértete en un Orador */
+.ser_orador {
+	width: 50%;
+	z-index: 4;
+}
+.ser_orador h4 {
+	font-size: 1rem;
+	font-weight: normal;
+	text-align: center;
+}
+.ser_orador h4 a {
+	color: #000;
+	text-decoration: none;
+	border-bottom: dotted 1px #000;
+}
+.ser_orador h4 a:hover {	
+	color: #666;
+	border-bottom: dotted 1px #666;
+}
+.ser_orador form input {
+	font-size: 0.8rem;
+}
+.ser_orador form .espacio {
+	width: 0.7rem;
+}
+.ser_orador form textarea {
+	font-size: 1.3rem;
+}
+.ser_orador h5 {
+	color: #6c757c;
+	padding-top: 0.3rem;
+	font-size: 0.8rem;
+	font-weight: normal;
+}
+.ser_orador form button {
+	background-color: #96c93e;
+	width: 100%;
+	border-color: #96c93e;
+}
+.ser_orador form button:hover {
+	background-color: #9bdc2a;
+	border-color: #96c93e;
+}
+.ser_orador form button:focus {
+	background-color: #9bdc2a;
+	border-color: #96c93e;
+}
+@media screen and (max-width: 1200px) {
+	.ser_orador h4 {
+		font-size: 1.2rem;
+	}
+}
+@media screen and (max-width: 992px) {
+	.ser_orador {
+		width: 90%;
+	}
+}
+/* Section del formulario para la compra de Tickets */
+.tickets {
+	width: 100%;
+	margin-top: 100px;
+}
+.promos {
+	width: 50%;
+	text-align: center;
+}
+.promos .card {
+	width: 32.5%;
+	height: calc(100vw * 0.5 * 0.25);
+	border-radius: 0!important;
+}
+.promos h5 {	
+    font-size: 1.25rem;
+}
+.promos h6 {	
+    font-size: 1rem;
+}
+.promos p {	
+    font-size: 1rem;
+}
+.text-muted {
+	margin: 0;
+	font-size: 0.8rem!important;
+}
+.tickets form {
+	width: 50%;
+}
+.tickets form input {
+	font-size: 0.8rem;
+}
+.tickets form .espacio {
+	width: 0.7rem;
+}
+.tickets form label {
+	font-size: 0.8rem;
+}
+.tickets form select {
+	font-size: 0.8rem;
+}
+.tickets form textarea {
+	font-size: 1.3rem;
+}
+.tickets form button {
+	background-color: #96c93e;
+	width: 100%;
+	border-color: #96c93e;
+}
+.tickets form button:hover {
+	background-color: #9bdc2a;
+	border-color: #96c93e;
+}
+.tickets form button:focus {
+	background-color: #9bdc2a;
+	border-color: #96c93e;
+}
+@media screen and (max-width: 1200px) {
+	.promos {
+		width: 60%;
+	}
+	.promos .card {
+		width: 32.5%;
+		height: calc(100vw * 0.5 * 0.3);
+	}
+	.tickets form {
+		width: 60%;
+	}
+}
+@media screen and (max-width: 992px) {
+	.promos {
+		width: 90%;
+	}
+	.promos .card {
+		width: 32.5%;
+		height: calc(100vw * 0.5 * 0.4);
+	}
+	.promos h5 {	
+	    font-size: 1.5rem;
+	}
+	.promos h6 {	
+	    font-size: 1.2rem;
+	}
+	.promos p {	
+	    font-size: 1.2rem;
+	}
+	.text-muted {
+		font-size: 1rem!important;
+	}
+	.tickets form {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 780px) {
+	.promos .card {
+		width: 32.5%;
+		height: calc(100vw * 0.5 * 0.5);
+	}
+}
+@media screen and (max-width: 768px) {
+	.promos .card {
+		width: 32.5%;
+		height: calc(100vw * 0.5 * 0.7);
+	}
+}
+@media screen and (max-width: 576px) {
+	.promos {
+		flex-direction: column!important;
+	}
+	.promos .card {
+		width: 100%;
+		height: calc(100vw * 0.6);
+	}
+}
+/* Footer -------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+footer {
+	background: linear-gradient(90deg, rgba(29,55,68,1) 0%, rgba(29,82,113,1) 100%);
+	padding: 10vw!important;
+	z-index: 10;
+}
+footer ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+footer ul li {
+	width: 5rem;
+	margin: 0rem 1.5rem;
+}
+footer a {
+	color: #fff!important;
+	padding: 0vw!important;
+	font-size: 1rem;
+	text-align: center;
+}
+footer a:hover {
+	color: #ddd!important;
+}
+@media screen and (max-width: 1200px) {
+	footer {
+		padding: 2vw!important;
+	}
+}
+@media screen and (max-width: 992px) {
+	footer {
+		padding: 0vw!important;
+	}
+	footer ul li {
+		width: 8rem;
+		margin: 1.5rem 1.5rem;
+	}
+	footer a {
+		color: #fff!important;
+		padding: 0vw!important;
+		font-size: 1rem;
+		text-align: center;
+	}
+}

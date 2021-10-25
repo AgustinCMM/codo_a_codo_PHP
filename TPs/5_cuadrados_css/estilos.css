@@ -1,0 +1,23 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+section {
+	padding: 20px;
+	display: flex;
+}
+.cuadrado {
+	width: 300px;
+	height: 300px;
+	margin-right: 10px;
+	font-size: 40px;
+}
+.rojo {
+	color: #ff0;
+	background-color: #f00;
+}
+.negro {
+	color: #fff;
+	background-color: #000;
+}
