@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<title>Ejercicios JS</title>
+    <link rel="shortcut icon" href="img/javascript.png" />
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body class="g-0">
+	<header class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-dark py-0 pb-2">
+			<div class="container-fluid d-flex justify-content-around">
+				<a class="navbar-brand d-flex justify-content-center align-items-center logo" href="#">
+					<img src="img/codoacodo.png" alt="logo Codo a Codo"> 
+					<h1>Ejercicios JS</h1>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+					<ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#descripcion">Descripción</a>
+						</li>
+				        <li class="nav-item dropdown">
+				          <a class="nav-link dropdown-toggle" href="#nivel_1" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ejercicios JavaScript Nivel 1</a>
+				          <ul class="dropdown-menu menu sub_menu" aria-labelledby="navbarDropdownMenuLink">
+				            <li><a class="dropdown-item" href="#nivel_1">Ejercicios Nivel 1</a></li>
+				            <li><a class="dropdown-item" href="#n1_ejercicio_1">Ejercicio 1</a></li>
+				            <li><a class="dropdown-item" href="#n1_ejercicio_2">Ejercicio 2</a></li>
+				            <li><a class="dropdown-item" href="#n1_ejercicio_3">Ejercicio 3</a></li>
+				            <li><a class="dropdown-item" href="#n1_ejercicio_4">Ejercicio 4</a></li>
+				            <li><a class="dropdown-item" href="#n1_ejercicio_5">Ejercicio 5</a></li>
+				            <li><a class="dropdown-item" href="#n1_ejercicio_6">Ejercicio 6</a></li>
+				            <li><a class="dropdown-item" href="#n1_ejercicio_7">Ejercicio 7</a></li>
+				            <li><a class="dropdown-item" href="#n1_ejercicio_8">Ejercicio 8</a></li>
+				            <li><a class="dropdown-item" href="#n1_ejercicio_9">Ejercicio 9</a></li>
+				            <li><a class="dropdown-item" href="#n1_ejercicio_10">Ejercicio 10</a></li>
+				            <li><a class="dropdown-item" href="#n1_ejercicio_11">Ejercicio 11</a></li>
+				            <li><a class="dropdown-item" href="#n1_ejercicio_12">Ejercicio 12</a></li>
+				            <li><a class="dropdown-item" href="#n1_ejercicio_13">Ejercicio 13</a></li>
+				            <li><a class="dropdown-item" href="#n1_ejercicio_14">Ejercicio 14</a></li>
+				            <li><a class="dropdown-item" href="#n1_ejercicio_15">Ejercicio 15</a></li>
+				            <li><a class="dropdown-item" href="#n1_ejercicio_16">Ejercicio 16</a></li>
+				            <li><a class="dropdown-item" href="#n1_ejercicio_17">Ejercicio 17</a></li>
+				          </ul>
+				        </li>
+				        <li class="nav-item dropdown">
+				          <a class="nav-link dropdown-toggle" href="#nivel_2" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ejercicios JavaScript Nivel 2</a>
+				          <ul class="dropdown-menu menu sub_menu" aria-labelledby="navbarDropdownMenuLink">
+				            <li><a class="dropdown-item" href="#nivel_2">Ejercicios Nivel 2</a></li>
+				            <li><a class="dropdown-item" href="#n2_ejercicio_1">Ejercicio 1</a></li>
+				            <li><a class="dropdown-item" href="#n2_ejercicio_2">Ejercicio 2</a></li>
+				            <li><a class="dropdown-item" href="#n2_ejercicio_3">Ejercicio 3</a></li>
+				            <li><a class="dropdown-item" href="#n2_ejercicio_4">Ejercicio 4</a></li>
+				            <li><a class="dropdown-item" href="#n2_ejercicio_5">Ejercicio 5</a></li>
+				            <li><a class="dropdown-item" href="#n2_ejercicio_6">Ejercicio 6</a></li>
+				            <li><a class="dropdown-item" href="#n2_ejercicio_7">Ejercicio 7</a></li>
+				            <li><a class="dropdown-item" href="#n2_ejercicio_8">Ejercicio 8</a></li>
+				            <li><a class="dropdown-item" href="#n2_ejercicio_9">Ejercicio 9</a></li>
+				            <li><a class="dropdown-item" href="#n2_ejercicio_10">Ejercicio 10</a></li>
+				            <li><a class="dropdown-item" href="#n2_ejercicio_11">Ejercicio 11</a></li>
+				            <li><a class="dropdown-item" href="#n2_ejercicio_12">Ejercicio 12</a></li>
+				            <li><a class="dropdown-item" href="#n2_ejercicio_13">Ejercicio 13</a></li>
+				            <li><a class="dropdown-item" href="#n2_ejercicio_14">Ejercicio 14</a></li>
+				            <li><a class="dropdown-item" href="#n2_ejercicio_15">Ejercicio 15</a></li>
+				            <li><a class="dropdown-item" href="#n2_ejercicio_16">Ejercicio 16</a></li>
+				          </ul>
+				        </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container-fluid">
+		<section class="container-fluid" id="descripcion">
+			<h2>Ejercicios JavaScript - Agustín Massa</h2>
+			<p>Todos los ejercicios se muestran en las siguientes listas. Cada uno contiene la consigna y un botón para iniciar su funcionamiento. Si bien el resultado se muestra en la consola, cada uno lo muestra también en pantalla dentro de su respectivo espacio.</p>		
+		</section>
+		<section class="container-fluid" id="nivel_1">
+			<h3>Ejercicios Nivel 1</h3>
+			<ul class="list-group">
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n1_ejercicio_1">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 1</div>
+			      <p>Mostrar por consola, tu nombre, apellido, comisión y hobbies.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n1_ej1">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n1_ej1"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n1_ejercicio_2">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 2</div>
+			      <p>Escribe un programa que le pida al usuario ingresar una frase y la imprima en la consola.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n1_ej2">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n1_ej2"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n1_ejercicio_3">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 3</div>
+			      <p>Escribe un programa que le pregunte al usuario su nombre e imprima "Hola " seguido del nombre y un signo de exclamación.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n1_ej3">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n1_ej3"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n1_ejercicio_4">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 4</div>
+			      <p>Escribe un programa que le pida al usuario su nombre y apellido y lo imprima por consola.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n1_ej4">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n1_ej4"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n1_ejercicio_5">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 5</div>
+			      <p>Escribe un programa que le pida al usuario su año de nacimiento e imprima su edad actual en la consola con la frase "Tienes X años".</p>
+			      <button type="button" class="btn btn-dark" id="boton_n1_ej5">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n1_ej5"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n1_ejercicio_6">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 6</div>
+			      <p>El índice de masa corporal (IMC), o BMI por sus siglas en inglés, es un valor que determina la cantidad de grasa de una persona.<br>
+			      	El BMI se calcula con la siguiente formula:<br>
+			      	peso / altura^2<br>
+			      	Escribe un programa que le pida al usuario su peso y su altura para calcular su BMI e imprima la frase "Tu BMI es X".<br>
+			      </p>
+			      <button type="button" class="btn btn-dark" id="boton_n1_ej6">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n1_ej6"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n1_ejercicio_7">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 7</div>
+			      <p>Declarar una variable de nombre cantidadDeVentanas y asignarle la cantidad de ventanas que hay en tu casa. Mostrar el valor de la variable por la consola.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n1_ej7">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n1_ej7"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n1_ejercicio_8">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 8</div>
+			      <p>Declarar una variable de nombre soyHumano y asignarle el valor true (verdadero). Mostrar el valor de la variable por la consola.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n1_ej8">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n1_ej8"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n1_ejercicio_9">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 9</div>
+			      <p>Declarar una variable de nombre miGustoDePizza y asignarle la variedad de pizza que más te guste usando un String (cadena de caracteres). Mostrar el valor de la variable por la consola.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n1_ej9">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n1_ej9"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n1_ejercicio_10">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 10</div>
+			      <p>Mostrar por la consola los siguientes valores false, 'Hola', 0 y 'Minions' usando la misma variable.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n1_ej10">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n1_ej10"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n1_ejercicio_11">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 11</div>
+			      <p>Crear un programa que dado la base y la altura de un triangulo calcule la superficie y el perímetro.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n1_ej11">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n1_ej11"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n1_ejercicio_12">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 12</div>
+			      <p>Crear un programa que, al pasar los datos del peso de una persona en libras, haga la conversión a kilogramos.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n1_ej12">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n1_ej12"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n1_ejercicio_13">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 13</div>
+			      <p>Crear un programa que al ingresar el sueldo de un trabajador, aplique el 15% de aumento y lo muestre en la consola.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n1_ej13">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n1_ej13"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n1_ejercicio_14">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 14</div>
+			      <p>Crear un programa que al ingresar una nota de un alumno, muestre con un alert() si el alumno esta “aprobado” (se aprueba con una nota mayor a 7) y “reprobado” en caso contrario.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n1_ej14">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n1_ej14"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n1_ejercicio_15">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 15</div>
+			      <p>Crear un programa tal que dado como datos la categoría y el sueldo de un trabajador, calcule el aumento correspondiente teniendo en cuenta la siguiente tabla. Mostrar con un Alert() la categoría y el nuevo sueldo.</p>
+			      <table>
+			      	<thead>	
+		      			<tr>
+						    <th>Categoría</th>
+						    <th>Aumento</th>
+						  </tr>
+			      	</thead>
+			      	<tbody>
+			      		<tr>
+			      			<td>1</td>
+			      			<td>30%</td>
+			      		</tr>
+			      		<tr>
+			      			<td>2</td>
+			      			<td>20%</td>
+			      		</tr>
+			      		<tr>
+			      			<td>3</td>
+			      			<td>10%</td>
+			      		</tr>
+			      		<tr>
+			      			<td>4</td>
+			      			<td>5%</td>
+			      		</tr>
+			      	</tbody>
+			      </table>
+			      <button type="button" class="btn btn-dark" id="boton_n1_ej15">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n1_ej15"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n1_ejercicio_16">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 16</div>
+			      <p>Crear un programa tal que dado como datos la matrícula y 5 calificaciones de un alumno; imprima la matricula, el promedio y la palabra “aprobado” si el alumno tiene un promedio mayor o igual que 7, y la palabra “no aprobado” en caso contrario.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n1_ej16">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n1_ej16"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n1_ejercicio_17">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 17</div>
+			      <p>Dado 3 números enteros, determinar cual de ellos es el mayor, tenga en cuenta que los números pueden ser iguales.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n1_ej17">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n1_ej17"></div>
+			    </div>
+			  </li>
+			</ul>
+		</section>
+		<section class="container-fluid" id="nivel_2">
+			<h3>Ejercicios Nivel 2</h3>
+			<ul class="list-group">
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n2_ejercicio_1">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 1</div>
+			      <p>Crear un programa que defina tres variables llamadas “variable_a”, “variable_b” y “variable_resultado”. Cargar las primeras dos con los valores numéricos 33 y 77. Sumar ambas variables y guardar el resultado en la variable “variable_resultado”. Imprimir el resultado por consola.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n2_ej1">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n2_ej1"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n2_ejercicio_2">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 2</div>
+			      <p>Crear un programa que defina 5 variables llamadas “a”,“b”...“e” y una sexta variable llamada “promedio”. Cargar las 5 variables con valores y calcular el promedio de los mismos. Imprimir el resultado por consola.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n2_ej2">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n2_ej2"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n2_ejercicio_3">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 3</div>
+			      <p>Crear un programa que defina las variables “nota1” y “nota2”. Asignarle valores a ambas. Comparar si “nota1” es mayor a “nota2” e imprimir el resultado de la comparación.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n2_ej3">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n2_ej3"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n2_ejercicio_4">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 4</div>
+			      <p>Una farmacia hace el 15% de descuento a sus clientes si la compra es mayor a 100 pesos. Escribir un programa que, dado el monto de una compra como valor numérico, diga cuanto debe abonar el cliente aplicando el descuento si es necesario.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n2_ej4">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n2_ej4"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n2_ejercicio_5">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 5</div>
+			      <p>Crear un programa que calcule el pago que hacen un grupo de personas para ver una película teniendo en cuenta que si el grupo es menor de 8 personas el pago es de 1.5 pesos por persona y para grupos de 8 personas o más el pago es 0.5 pesos por persona.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n2_ej5">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n2_ej5"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n2_ejercicio_6">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 6</div>
+			      <p>Crear un programa que defina las variables “nota1” y “nota2”. Asignarle valores a ambas. Comparar si “nota1” es mayor a “nota2” imprimir el mensaje “Nota1 es mayor” o “Nota2 es mayor” según el resultado de la comparación.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n2_ej6">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n2_ej6"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n2_ejercicio_7">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 7</div>
+			      <p>Las puntuaciones de las películas se clasifican en:<br>
+			      	0: mala, 1: regular, 2: buena,3: muy buena, 4: excelente<br>
+			      	Crear un programa donde se pide al usuario que ingrese un valor entre 0 a 4. Imprimir la clasificación de la película según el valor numérico.
+			      </p>
+			      <button type="button" class="btn btn-dark" id="boton_n2_ej7">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n2_ej7"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n2_ejercicio_8">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 8</div>
+			      <p>Crear un programa que imprima una cuenta regresiva de 59 a 0.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n2_ej8">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n2_ej8"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n2_ejercicio_9">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 9</div>
+			      <p>Crear un programa que imprima los números pares de 0 a 100.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n2_ej9">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n2_ej9"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n2_ejercicio_10">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 10</div>
+			      <p>Crear un programa para imprimir todos los números de 100 a 0 inclusive.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n2_ej10">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n2_ej10"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n2_ejercicio_11">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 11</div>
+			      <p>Crear un programa en donde el usuario ingresa números y se guardan en un array. Al ingresar “-1” se imprimirán los números ingresado junto con sus posiciones dentro del array.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n2_ej11">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n2_ej11"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n2_ejercicio_12">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 12</div>
+			      <p>Crear un programa en donde el usuario ingresa números hasta que ingresa “-1”, en dicho caso el programa termina e imprime el promedio de los números ingresados.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n2_ej12">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n2_ej12"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n2_ejercicio_13">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 13</div>
+			      <p>Crear un programa en donde el usuario ingrese el nombre y el precio de 5 productos, al finalizar, se listarán en pantalla el nombre y el precio de los productos.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n2_ej13">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n2_ej13"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n2_ejercicio_14">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 14</div>
+			      <p>Se ingresan un conjunto de n alturas de personas por teclado. Mostrar la altura promedio de las personas.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n2_ej14">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n2_ej14"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n2_ejercicio_15">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 15</div>
+			      <p>Crear un Programa que pida al usuario un número entre 0 y 25, deberá mostrar por pantalla su significado en el bingo. Ej: 14 = "Borracho".</p>
+			      <button type="button" class="btn btn-dark" id="boton_n2_ej15">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n2_ej15"></div>
+			    </div>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start" id="n2_ejercicio_16">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Ejercicio 16</div>
+			      <p>Crear 2 Vectores, uno corresponderá a los nombres y otro a los apellidos de 10 compañeros del curso de Fullstack de codo a codo.</p>
+			      <button type="button" class="btn btn-dark" id="boton_n2_ej16">Ejecutar</button>
+			      <div class="container-fluid resultado" id="div_n2_ej16"></div>
+			    </div>
+			  </li>
+			</ul>
+		</section>
+	</main>
+
+    <footer class="navbar bg-dark p-3" id="footer">
+      <div class="container-fluid justify-content-center flex-column">
+        <span class="text-muted">Diseñado por <b>Agustín Massa</b> agus.massa96@gmail.com</span>
+        <span class="text-muted">Codo a Codo 4.0 Full Stack PHP <b><small>Comisión 1115</small></b> <i>todos los derechos reservados</i></span>
+      </div>
+    </footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="scripts.js"></script>
+</body>
+</html>

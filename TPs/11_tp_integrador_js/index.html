@@ -113,30 +113,107 @@
 				<button type="button" class="btn btn-outline-light">Conocé más</button>
 			</div>
 		</section>
-		<section class="container mb-3 ser_orador" id="ser_orador">
+		<section class="container mb-5 ser_orador" id="ser_orador">
 			<div class="container-fluid titulo">
 				<h3>Conviértete en un</h3>
 				<h2>Orador</h2>
 			</div>
 			<h4>Anótate como orador para dar una <a href="#">charla ignite</a>. Cuéntanos de qué quieres hablar!</h4>
-			<form>
+			<form action="#form_oradores" id="form_oradores">
 				<div class="container d-flex justify-content-between">
 				  <div class="mb-3 col">
-				    <input type="text" class="form-control" placeholder="Nombre">
+				    <input type="text" class="form-control" name="nombre_orador" id="nombre_orador" placeholder="Nombre" required>
 				  </div>
 				  <div class="espacio"></div>
 				  <div class="mb-3 col">
-				    <input type="text" class="form-control" placeholder="Apellido">
+				    <input type="text" class="form-control" name="apellido_orador" id="apellido_orador" placeholder="Apellido" required>
 				  </div>
 				</div>
 			  <div class="mb-3">
-			  	<textarea class="form-control" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
+			  	<textarea class="form-control" name="descripcion_orador" id="descripcion_orador" rows="3" placeholder="Sobre qué quieres hablar?" required></textarea>
 			  	<h5>Recuerda incluir un título para tu charla</h5>
 			  </div>
-			  <button type="submit" class="btn btn-primary">Enviar</button>
+			  <button type="submit" class="btn btn-primary" name="submit_orador" id="submit_orador">Enviar</button>
 			</form>
 		</section>
-		<section id="tickets"></section>
+		<section class="container-fluid d-flex align-items-center justify-content-center flex-column tickets" id="tickets">
+			<div class="container d-flex justify-content-between promos">
+				<div class="card border-primary" id="card_estudiante">
+				  <div class="card-body d-flex align-items-center justify-content-center flex-column">
+				    <h5 class="card-title">Estudiante</h5>
+				    <p class="card-text">Tienen un descuento</p>
+				    <h6 class="card-title"><b>80%</b></h6>
+				    <p class="text-muted">* presentar documentación</p>
+				  </div>
+				</div>
+				<div class="card border-primary" id="card_trainee">
+				  <div class="card-body d-flex align-items-center justify-content-center flex-column">
+				    <h5 class="card-title">Trainee</h5>
+				    <p class="card-text">Tienen un descuento</p>
+				    <h6 class="card-title"><b>50%</b></h6>
+				    <p class="text-muted">* presentar documentación</p>
+				  </div>
+				</div>
+				<div class="card border-warning" id="card_junior">
+				  <div class="card-body d-flex align-items-center justify-content-center flex-column">
+				    <h5 class="card-title">Junior</h5>
+				    <p class="card-text">Tienen un descuento</p>
+				    <h6 class="card-title"><b>15%</b></h6>
+				    <p class="text-muted">* presentar documentación</p>
+				  </div>
+				</div>
+			</div>
+			<div class="container-fluid mb-3 titulo">
+				<h3>Venta</h3>
+				<h2>Valor de ticket $200</h2>
+			</div>
+			<form action="#form_tickets" id="form_tickets">
+				<div class="container d-flex justify-content-between">
+				  <div class="mb-3 col">
+				    <input type="text" class="form-control" name="nombre_tickets" id="nombre_tickets" placeholder="Nombre" required>
+				  </div>
+				  <div class="espacio"></div>
+				  <div class="mb-3 col">
+				    <input type="text" class="form-control" name="apellido_tickets" id="apellido_tickets" placeholder="Apellido" required>
+				  </div>
+				</div>
+				<div class="container d-flex justify-content-center">
+				  <div class="mb-3 col">
+				    <input type="email" class="form-control" name="mail_tickets" id="mail_tickets" placeholder="Correo" required>
+				  </div>
+				</div>
+				<div class="container d-flex justify-content-between">
+				  <div class="mb-3 col">
+				  	<label>Cantidad</label>
+				    <input type="number" class="form-control" name="cantidad_tickets" id="cantidad_tickets" placeholder="Cantidad" required>
+				  </div>
+				  <div class="espacio"></div>
+				  <div class="mb-3 col">
+				  	<label>Categoria</label>
+				  	<select class="form-select" name="categoria_tickets" id="categoria_tickets" aria-label="Default select example" required>
+					  <option value="0">Ninguna</option>
+					  <option value="1">Estudiante</option>
+					  <option value="2">Trainee</option>
+					  <option value="3">Junior</option>
+					</select>
+				  </div>
+				</div>
+				<div class="container d-flex justify-content-center">
+				  <div class="mb-3 col">
+				    <input type="text" class="form-control" name="total_tickets" id="total_tickets" value="Total a Pagar: $" readonly>
+				  </div>
+				</div>
+				<div class="container d-flex justify-content-between">
+				  <div class="mb-3 col">
+					<button type="reset" name="borrar_tickets" id="borrar_tickets" class="btn btn-primary">Borrar</button>
+				  </div>
+				  	<div class="espacio"></div>
+				  <div class="mb-3 col">
+					<button type="submit" name="submit_tickets" id="submit_tickets" class="btn btn-primary">Enviar</button>
+				  </div>
+				</div>
+			</form>
+		</section>
 	</main>
 
     <footer class="container-fluid py-3" id="footer">
@@ -166,5 +243,6 @@
     </footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="scripts.js"></script>
 </body>
 </html>

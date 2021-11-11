@@ -49,7 +49,7 @@ header a.comprar_tickets:hover {
 /* Main ---------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------- */
 /* Section conferencia */
-main .conferencia {
+.conferencia {
 	background-image: url(img/ba1.jpg);
 	background-repeat: no-repeat;
 	background-position: center -10vw;
@@ -59,14 +59,14 @@ main .conferencia {
 	position: relative;
 	z-index: 1;
 }
-main .conferencia .opacidad {
+.conferencia .opacidad {
 	background-color: #0007;
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	z-index: 0;
 }
-main .conferencia .info_principal {
+.conferencia .info_principal {
 	color: #fff;
 	width: 40vw;
 	position: absolute;
@@ -75,50 +75,50 @@ main .conferencia .info_principal {
 	text-align: right;
 	z-index: 1;
 }
-main .conferencia .info_principal h1 {
+.conferencia .info_principal h1 {
 	font-size: 2.2rem;
 }
-main .conferencia .info_principal p {
+.conferencia .info_principal p {
 	font-size: 1.1rem;
 }
-main .conferencia .info_principal a {
+.conferencia .info_principal a {
 	margin: 0.5rem 0.4rem;
 	font-size: 1rem;
 }
-main a.comprar_tickets {
+.info_principal a.comprar_tickets {
 	background-color: #29a744!important;
 	border-color: #29a744!important;
 }
-main a.comprar_tickets:hover {
+.info_principal a.comprar_tickets:hover {
 	background-color: #29c744!important;
 	border-color: #29a744!important;
 }
 @media screen and (max-width: 992px) {
-	main .conferencia {
+	.conferencia {
 		background-position: center center;
 		width: 100%;
 		height: 84vw;
 	}
-	main .conferencia .info_principal {
+	.conferencia .info_principal {
 		width: 80vw;
 		right: 10vw;
 		bottom: 30vw;
 	}
 }
 @media screen and (max-width: 576px) {
-	main .conferencia {
+	.conferencia {
 		background-position: center center;
 		width: 100%;
 		height: 80vh;
 	}
-	main .conferencia .info_principal {
+	.conferencia .info_principal {
 		width: 80vw;
 		right: 10vw;
 		bottom: 10vw;
 	}
 }
 /* Section de las cards de los oradores */
-main .oradores {
+.oradores {
 	width: 65vw;
 	z-index: 2;
 }
@@ -134,15 +134,15 @@ main .oradores {
 	text-align: center;
 	text-transform: uppercase;
 }
-main .oradores .botones button {
+.oradores .botones button {
 	padding: 0rem 0.3rem;
 	font-size: 0.65rem;
 	font-weight: bolder;
 }
-main .oradores h5 {
+.oradores h5 {
 	font-size: 1.1rem;
 }
-main .oradores p {
+.oradores p {
 	color: #666;
 	font-size: 0.65rem;
 	line-height: 1.2rem;
@@ -155,14 +155,14 @@ main .oradores p {
 	.titulo h2 {
 		font-size: 2.5rem;
 	}
-	main .oradores .botones button {
+	.oradores .botones button {
 		padding: 0rem 0.6rem;
 		font-size: 1.3rem;
 	}
-	main .oradores h5 {
+	.oradores h5 {
 		font-size: 2.2rem;
 	}
-	main .oradores p {
+	.oradores p {
 		font-size: 1.3rem;
 		line-height: 2.4rem;
 	}
@@ -175,148 +175,280 @@ main .oradores p {
 	.titulo h2 {
 		font-size: 2.2rem;
 	}
-	main .oradores .botones button {
+	.oradores .botones button {
 		padding: 0rem 0.3rem;
 		font-size: 0.8rem;
 	}
-	main .oradores h5 {
+	.oradores h5 {
 		font-size: 1.5rem;
 	}
-	main .oradores p {
+	.oradores p {
 		font-size: 0.8rem;
 		line-height: 1.5rem;
 	}
 }
 /* Section de Bs As - Octubre */
-main .lugar {
+.lugar {
 	height: 30vw;
 	z-index: 3;
 }
-main .lugar div {
+.lugar div {
 	width: 50%;
 	height: 100%;
 }
-main .lugar div.izquierda {
+.lugar div.izquierda {
 	background-image: url(img/honolulu.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-main .lugar div.derecha {
+.lugar div.derecha {
 	color: #fff;
 	background-color: #353a40;
 	padding: 1.5vw 1vw;
 }
-main .lugar div.derecha h2 {
+.lugar div.derecha h2 {
 	font-size: 1.6rem;
 }
-main .lugar div.derecha p {
+.lugar div.derecha p {
 	font-size: 0.8rem;
 	line-height: 1.5rem;
 }
-main .lugar div.derecha button {
+.lugar div.derecha button {
 	padding: 0.2rem 0.5rem;
 	font-size: 0.9rem;
 }
 @media screen and (max-width: 992px) {
-	main .lugar {
+	.lugar {
 		height: 90vh;
 		flex-direction: column;
 	}
-	main .lugar div {
+	.lugar div {
 		width: 100%;
 		height: 50%;
 	}
-	main .lugar div.derecha {
+	.lugar div.derecha {
 		padding: 5vw 3vw;
 	}
-	main .lugar div.derecha h2 {
+	.lugar div.derecha h2 {
 		font-size: 1.8rem;
 	}
-	main .lugar div.derecha p {
+	.lugar div.derecha p {
 		font-size: 1rem;
 		line-height: 1.7rem;
 	}
-	main .lugar div.derecha button {
+	.lugar div.derecha button {
 		padding: 0.4rem 0.7rem;
 		font-size: 1.1rem;
 	}
 }
 @media screen and (max-width: 576px) {
-	main .lugar {
+	.lugar {
 		height: 90vh;
 	}
-	main .lugar div.izquierda {
+	.lugar div.izquierda {
 		width: 100%;
 		height: 40%;
 	}
-	main .lugar div.derecha {
+	.lugar div.derecha {
 		width: 100%;
 		height: 60%;
 	}
-	main .lugar div.derecha h2 {
+	.lugar div.derecha h2 {
 		font-size: 1.5rem;
 	}
-	main .lugar div.derecha p {
+	.lugar div.derecha p {
 		font-size: 0.8rem;
 		line-height: 1.4rem;
 	}
-	main .lugar div.derecha button {
+	.lugar div.derecha button {
 		padding: 0.4rem 0.7rem;
 		font-size: 0.9rem;
 	}
 }
 /* Section del Conviértete en un Orador */
-main .ser_orador {
+.ser_orador {
 	width: 50%;
 	z-index: 4;
 }
-main .ser_orador h4 {
+.ser_orador h4 {
 	font-size: 1rem;
 	font-weight: normal;
 	text-align: center;
 }
-main .ser_orador h4 a {
+.ser_orador h4 a {
 	color: #000;
 	text-decoration: none;
 	border-bottom: dotted 1px #000;
 }
-main .ser_orador h4 a:hover {	
+.ser_orador h4 a:hover {	
 	color: #666;
 	border-bottom: dotted 1px #666;
 }
-main .ser_orador form input {
+.ser_orador form input {
 	font-size: 0.8rem;
 }
-main .ser_orador form .espacio {
-	width: 2rem;
+.ser_orador form .espacio {
+	width: 0.7rem;
 }
-main .ser_orador form textarea {
+.ser_orador form textarea {
 	font-size: 1.3rem;
 }
-main .ser_orador h5 {
+.ser_orador h5 {
 	color: #6c757c;
 	padding-top: 0.3rem;
 	font-size: 0.8rem;
 	font-weight: normal;
 }
-main .ser_orador form button {
+.ser_orador form button {
 	background-color: #96c93e;
 	width: 100%;
 	border-color: #96c93e;
 }
-main .ser_orador form button:hover {
+.ser_orador form button:hover {
+	background-color: #9bdc2a;
+	border-color: #96c93e;
+}
+.ser_orador form button:focus {
 	background-color: #9bdc2a;
 	border-color: #96c93e;
 }
 @media screen and (max-width: 1200px) {
-	main .ser_orador h4 {
+	.ser_orador h4 {
 		font-size: 1.2rem;
 	}
 }
 @media screen and (max-width: 992px) {
-	main .ser_orador {
+	.ser_orador {
 		width: 90%;
+	}
+}
+/* Section del formulario para la compra de Tickets */
+.tickets {
+	width: 100%;
+	margin-top: 100px;
+}
+.promos {
+	width: 50%;
+	text-align: center;
+}
+.promos .card {
+	width: 32.5%;
+	height: calc(100vw * 0.5 * 0.25);
+	border-radius: 0!important;
+}
+.promos .card:hover {
+	box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+	cursor: pointer;
+}
+.promos h5 {	
+    font-size: 1.25rem;
+}
+.promos h6 {	
+    font-size: 1rem;
+}
+.promos p {	
+    font-size: 1rem;
+}
+.text-muted {
+	margin: 0;
+	font-size: 0.8rem!important;
+}
+.tickets form {
+	width: 50%;
+}
+.tickets form input {
+	font-size: 0.8rem;
+}
+#total_tickets {
+	color: #0040a5;
+	background-color: #cce5ff;
+	margin: 15px 0px;
+	padding: 12px 12px;
+	border-color: #86b7fe;
+	box-shadow: none;
+}
+.tickets form .espacio {
+	width: 0.7rem;
+}
+.tickets form label {
+	font-size: 0.8rem;
+}
+.tickets form select {
+	font-size: 0.8rem;
+}
+.tickets form textarea {
+	font-size: 1.3rem;
+}
+.tickets form button {
+	background-color: #96c93e;
+	width: 100%;
+	border-color: #96c93e;
+}
+.tickets form button:hover {
+	background-color: #9bdc2a;
+	border-color: #96c93e;
+}
+.tickets form button:focus {
+	background-color: #9bdc2a;
+	border-color: #96c93e;
+}
+@media screen and (max-width: 1200px) {
+	.promos {
+		width: 60%;
+	}
+	.promos .card {
+		width: 32.5%;
+		height: calc(100vw * 0.5 * 0.3);
+	}
+	.tickets form {
+		width: 60%;
+	}
+}
+@media screen and (max-width: 992px) {
+	.promos {
+		width: 90%;
+	}
+	.promos .card {
+		width: 32.5%;
+		height: calc(100vw * 0.5 * 0.5);
+	}
+	.promos h5 {	
+	    font-size: 1.5rem;
+	}
+	.promos h6 {	
+	    font-size: 1.2rem;
+	}
+	.promos p {	
+	    font-size: 1.2rem;
+	}
+	.text-muted {
+		font-size: 1rem!important;
+	}
+	.tickets form {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 780px) {
+	.promos .card {
+		width: 32.5%;
+		height: calc(100vw * 0.5 * 0.5);
+	}
+}
+@media screen and (max-width: 768px) {
+	.promos .card {
+		width: 32.5%;
+		height: calc(100vw * 0.5 * 0.7);
+	}
+}
+@media screen and (max-width: 576px) {
+	.promos {
+		flex-direction: column!important;
+	}
+	.promos .card {
+		width: 100%;
+		height: calc(100vw * 0.6);
+		margin-bottom: 10px;
 	}
 }
 /* Footer -------------------------------------------------------------------------------------- */

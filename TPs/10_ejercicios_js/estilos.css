@@ -1,0 +1,132 @@
+/* General ------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* Header -------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+header {
+	background-color: #343a40;
+}
+header .logo {
+	width: 20%;
+	margin: 0 5%;
+}
+header .logo img {
+	width: 7rem;
+}
+header .logo h1 {
+	padding-top: 0.3vw;
+	font-size: 1.3rem;
+	font-weight: normal;
+}
+header .menu {
+	padding-left: 7%;
+	padding-right: 3%;
+	font-size: 1.1rem;
+	text-align: center;
+}
+header .sub_menu {
+	background-color: #eee;
+	max-height: 50vh;
+	overflow: scroll;
+}
+/* Scrollbar styles */
+header .sub_menu::-webkit-scrollbar {
+width: 0.5vw;
+height: 0.5vw;
+}
+header .sub_menu::-webkit-scrollbar-track {
+box-shadow: inset 0 0 1vw #bbb;
+border-radius: 1vw;
+}
+header .sub_menu::-webkit-scrollbar-thumb {
+border-radius: 1vw;
+background: #000;
+}
+/* End Scrollbar styles */
+header .sub_menu a:hover {
+	background-color: #ccc;
+}
+@media screen and (max-width: 1200px) {
+	header .menu {
+		padding-left: 0%;
+		padding-right: 0%;
+		font-size: 1rem;
+	}
+}
+@media screen and (max-width: 992px) {
+	header .menu {
+		font-size: 1.5rem;
+	}
+}
+/* Main ---------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+main {
+	min-height: 80vh;
+}
+#descripcion {
+	width: 50%;
+	padding: 20px 0px;
+}
+#descripcion h2 {
+	text-align: center;
+	font-weight: bolder;
+}
+#descripcion p {
+	text-align: justify;
+}
+main h3 {
+	font-weight: bolder;
+}
+#nivel_1 {
+	background-color: #eee;
+	padding: 2vw 5vw;
+	margin-bottom: 20px;
+}
+#nivel_2 {
+	padding: 2vw 5vw;
+	margin-bottom: 20px;
+}
+ul li div {
+	width: 100%;
+}
+ul li div div {
+	font-size: 1.5rem;
+}
+table {
+	margin: 2vw 0vw;
+}
+table, th, td {
+	border: solid 1px #000;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 0.5vw 1vw;
+	text-align: center;
+}
+.resultado {
+	background-color: #eee;
+	width: 100%;
+	margin: 1vw 0vw;
+	padding: 1vw 2vw;
+	font-size: 1rem;
+	display: none;
+}
+/* Footer -------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+footer {
+	z-index: 10;
+}
+@media screen and (max-width: 1200px) {
+	footer {
+		padding: 2vw!important;
+	}
+}
+@media screen and (max-width: 992px) {
+	footer {
+		padding: 0vw!important;
+	}
+}
